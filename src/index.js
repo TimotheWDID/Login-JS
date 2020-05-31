@@ -2,12 +2,13 @@
 import './global';
 //<Impo
 
-//Import img
+//>Import img
 function importAll(r) {
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
     return images;
 } 
+//<Import img
 
 //>Const
     //>General
@@ -15,10 +16,15 @@ function importAll(r) {
     //<General
 
     //>Connexion infos
-        const email = 'portelli.timothe@gmail.com';
-        const password = 'salut';
+        const email = 'test@test.com';
+        const password = 'password';
         const loadtime = 1000;
     //<Connexion infos
+
+    //>Data Connexion
+        const dataemail = document.querySelector('#dataemail');
+        const datapassword = document.querySelector('#datapassword');
+    //<Data Connexion
 
     //>Pages
         const main = document.querySelector('main');
@@ -30,25 +36,30 @@ function importAll(r) {
         const register1 = 'translateY(00vh) translateX(00vw)';
         const register2 = 'translateY(00vh) translateX(-100vw)';
         const register3 = 'translateY(00vh) translateX(-200vw)';
-        const dataemail = document.querySelector('#dataemail');
-        const datapassword = document.querySelector('#datapassword');
     //<Pages
+
+    //>Watch password
+        const eyeoff = document.querySelector('#eye-off');
+        const eyeon = document.querySelector('#eye-on');
+    //<Watch password
 
 //<Const
 
 //>Functions
 
-    //>Connexion page
+    //>Test Login
+    function testlogin() { 
+        if (datapassword.value === password && dataemail.value === email)
+            return true;
+        else
+            return false;
+    };
 
-        //>Test Login
-        function testlogin() { 
-            if (datapassword.value === password && dataemail.value === email)
-                return true;
-            else
-                return false;
-        };
-        //<Test Login
-    //<Connexion page
+    function redirectToConnect(){
+        console.log('redirection vers une nouvelle page sécurisé pour la personne connecter.');
+    };
+    //<Test Login
+
 
     //>Click to Change interface
 
@@ -58,14 +69,16 @@ function importAll(r) {
                 goto(item);
             })
         })
+
         document.querySelectorAll('a').forEach(item =>{
             item.addEventListener('click', (e) =>{
                 e.preventDefault();
                 goto(item);
             })
         })
+
         function goto(item){
-            let goto = item.dataset.go;
+            let goto = item.dataset.go; // all transition are informed in the attribute data 'go' so to change the link modify this attribut.
                 
                 switch (goto) {
                     case 'logged':
@@ -73,14 +86,14 @@ function importAll(r) {
                             main.style.transform = logged;
                             interfacelogged.style.display = 'flex';  
                             var wait;  
-                            wait = setTimeout(redirectToConnect, 800);               
+                            wait = setTimeout(redirectToConnect, 800); //a little less time than animation to make the transition more dynamic.
                         }
                         else
                             document.querySelector('#error').classList.toggle('error-show');
                             dataemail.value = '';
                             datapassword.value = '';
                             dataemail.parentNode.classList.toggle('error-input');
-                            datapassword.parentNode.classList.toggle('error-input');
+                            datapassword.parentNode.classList.toggle('error-input'); 
                             
                         break;
 
@@ -96,30 +109,25 @@ function importAll(r) {
                         main.style.transform = forgotpassword1;
                         break;
 
-                    case 'forgotpassword2':
-                       
+                    case 'forgotpassword2':                       
                         main.style.transform = forgotpassword2;
                         break;
 
-                    case 'register1':
-                       
+                    case 'register1':                       
                         main.style.transform = register1;
                         break;
 
-                    case 'register2':
-                       
+                    case 'register2':                       
                         main.style.transform = register2;
                         break;
 
                     case 'register3':
-                       
                         main.style.transform = register3;
                         break;
 
                     case 'disconnect':
                         interfacelogged.style.display = 'none';
                         window.location.reload()
-
                         break;
                     
                     default:
@@ -128,8 +136,19 @@ function importAll(r) {
         };
 
     //<Click to change interface
-    function redirectToConnect(){
-      console.log('redirection vers une nouvelle page sécurisé pour la personne connecter.');
-        
-    };
+
+    //>Show password
+    eyeoff.addEventListener('click', (e) =>{
+        datapassword.setAttribute('type', 'password');
+        eyeoff.classList.toggle('d-none');
+        eyeon.classList.toggle('d-none');
+    });
+    
+    eyeon.addEventListener('click', (e) =>{
+        datapassword.setAttribute('type', 'text');
+        eyeoff.classList.toggle('d-none');
+        eyeon.classList.toggle('d-none');
+    });
+    //<Show password
+
 //<Functions

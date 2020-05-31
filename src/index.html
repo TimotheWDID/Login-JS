@@ -115,7 +115,7 @@
             <form method="post" class="card-form" data-go="logged">
                 <div class="card-content">
                     
-                    <span id="error" class="error">Adresse email ou mot de passe invalide</span>
+                    <span id="error" class="error d-none">Adresse email ou mot de passe invalide</span>
                     <div class="card-item">
                         <input required placeholder="Email" name="email" type="email" id="dataemail">
                     </div>
@@ -123,6 +123,8 @@
                     <div class="card-item">
                         <div class="password-box">
                             <input required placeholder="Mot de passe" required name="password" class="input-password" type="password" id="datapassword">
+                            <img class="watch-password d-none" id="eye-off" src="/img/eye-off.svg" alt="eye off">
+                            <img class="watch-password" id="eye-on" src="/img/eye.svg" alt="eye on">
                         </div>
                         <a class="link link-forgotpassword" data-go="forgotpassword1" href="#">Mot de passe oublié ?</a>
                     </div>
