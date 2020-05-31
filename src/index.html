@@ -17,22 +17,22 @@
                 <h1>Inscription 1/2</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form" data-go="register2">
                 <div class="card-content">
                     
                     <div class="card-item">
-                        <input type="text" placeholder="Pseudo" name="" id="">
+                        <input required type="text" placeholder="Pseudo" name="" id="">
                     </div>
                     <div class="card-item">
-                        <input type="email" placeholder="Email" name="" id="">
+                        <input required type="email" placeholder="Email" name="" id="">
                     </div>
                     
                     <div  class="card-item">
-                        <input name="date" id="date" type="date">
+                        <input required name="date" id="date" type="date">
                     </div>
                     
                     <div class="card-item">
-                        <button type="submit" class="next" data-go="register2">Suivant</button>
+                        <button type="submit" class="next">Suivant</button>
                     </div>
                     
                 </div> 
@@ -50,19 +50,19 @@
                 <h1>Inscription 2/2</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form" data-go="register3">
                 <div class="card-content">
                     
                     <div class="card-item">
-                        <input type="password" placeholder="Mot de passe">
+                        <input required type="password" placeholder="Mot de passe">
                     </div>
                     
                     <div  class="card-item">
-                        <input type="password" placeholder="Confirmer mot de passe">
+                        <input required type="password" placeholder="Confirmer mot de passe">
                     </div>
                     
                     <div class="card-next">
-                        <button type="submit" data-go="register3" class="next">Confirmer</button>
+                        <button type="submit" class="next">Confirmer</button>
                     </div>
                     
                 </div> 
@@ -80,7 +80,7 @@
                 <h1>Inscription terminé</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form" data-go="login">
                 <div class="card-content">
                     
                     <div class="card-item">
@@ -92,7 +92,7 @@
                     </div>
                     <div class="card-item"> <b> *****@****.** </b> .</div>
                     <div class="card-item"> merci de consulter votre boite mail.</div>
-                    <div class="card-item"><button class="next" data-go="login" type="submit">Terminée</button></div>
+                    <div class="card-item"><button class="next" type="submit">Terminée</button></div>
                     
                     
                 </div> 
@@ -110,7 +110,7 @@
                 <h1>Bienvenue</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form" data-go="logged">
                 <div class="card-content">
                     
                     <div class="card-item">
@@ -125,7 +125,7 @@
                     </div>
                     
                     <div class="card-next">
-                        <button name="connexion" class="next" data-go="logged" type="submit">
+                        <button name="connexion" class="next" type="submit">
                             Connexion
                         </button>
                         <p class="register">Pas inscrit ? <a class="link" data-go="register1" href="#">Inscription</a></p> 
@@ -146,7 +146,7 @@
                 <h1>Vous êtes connecté !</h1>
             </div>
             
-            <form class="card-form">
+            <form class="card-form" data-go="disconnect">
                 <div class="card-content">
                     <div class="shortcuts">
                         <a href="#"><div class="tinybutton"><img src="/img/facebook.svg" alt="" srcset=""></div></a>
@@ -156,7 +156,7 @@
                         <a href="#"><div class="tinybutton"><img src="/img/youtube.svg" alt="" srcset=""></div></a>
                     </div>
                     <div class="card-next">
-                        <button type="submit" data-go="disconnect" class="next red">Se déconnecter</button>
+                        <button type="submit" class="next red">Se déconnecter</button>
                     </div>
                     
                 </div> 
@@ -174,7 +174,7 @@
                 <h1>Mot de passe oublié</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form" data-go="forgetpassword2">
                 <div class="card-content">
                     
                     <div class="card-item">
@@ -182,7 +182,7 @@
                     </div>
                     
                     <div class="card-next">
-                        <button type="submit" data-go="forgetpassword2" class="next">Envoyer le mail de récupération</button>
+                        <button type="submit" class="next">Envoyer le mail de récupération</button>
                     </div>
                     <div class="card-item"><a class="link" data-go="login" href="#">Retour</a></div>
                     
@@ -201,7 +201,7 @@
                 <h1>Nouveau mot de passe</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form" data-go="login">
                 <div class="card-content">
                     
                     <div class="card-item">
@@ -210,7 +210,7 @@
                     
                     <div class="card-item"> <b> *****@****.** </b> .</div>
                     <div class="card-item"> merci de consulter votre boite mail.</div>
-                    <div class="card-item"><button class="next" data-go="login" type="submit">Terminer</button></div>
+                    <div class="card-item"><button class="next" type="submit">Terminer</button></div>
                     
                     
                 </div> 

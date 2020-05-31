@@ -52,13 +52,23 @@ function importAll(r) {
 
     //>Click to Change interface
 
-        document.querySelectorAll('a, button').forEach(item =>{
+        document.querySelectorAll('form').forEach(item =>{
+            item.addEventListener('submit', (e) =>{
+                e.preventDefault();
+                goto(item);
+            })
+        })
+        document.querySelectorAll('a').forEach(item =>{
             item.addEventListener('click', (e) =>{
-                let goto = item.dataset.go;
+                e.preventDefault();
+                goto(item);
+            })
+        })
+        function goto(item){
+            let goto = item.dataset.go;
                 
                 switch (goto) {
                     case 'logged':
-                        e.preventDefault();
                         if (testlogin()){
                             main.style.transform = logged;
                             interfacelogged.style.display = 'flex';                            
@@ -69,37 +79,35 @@ function importAll(r) {
                         break;
 
                     case 'login':
-                        e.preventDefault();
                         main.style.transform = login;
                         break;
                         
                     case 'forgetpassword1':
-                        e.preventDefault();
                         main.style.transform = forgetpassword1;
                         break;
 
                     case 'forgetpassword2':
-                        e.preventDefault();
+                       
                         main.style.transform = forgetpassword2;
                         break;
 
                     case 'register1':
-                        e.preventDefault();
+                       
                         main.style.transform = register1;
                         break;
 
                     case 'register2':
-                        e.preventDefault();
+                       
                         main.style.transform = register2;
                         break;
 
                     case 'register3':
-                        e.preventDefault();
+                       
                         main.style.transform = register3;
                         break;
 
                     case 'disconnect':
-                        e.preventDefault();
+                       
                         main.style.transform = login;
                         interfacelogged.style.display = 'none';
 
@@ -108,9 +116,7 @@ function importAll(r) {
                     default:
                         break;
                 }
-                
-            })
-        })
+        };
 
     //<Click to change interface
 
