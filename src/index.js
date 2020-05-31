@@ -61,7 +61,7 @@ function importAll(r) {
                         e.preventDefault();
                         if (testlogin()){
                             main.style.transform = logged;
-                            interfacelogged.style.display = flex;
+                            interfacelogged.style.display = 'flex';                            
                         }
                         else
                             console.log('Connexion failed');
@@ -101,7 +101,7 @@ function importAll(r) {
                     case 'disconnect':
                         e.preventDefault();
                         main.style.transform = login;
-                        interfacelogged.style.display = none;
+                        interfacelogged.style.display = 'none';
 
                         break;
                     
