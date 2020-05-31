@@ -26,7 +26,7 @@ function importAll(r) {
         const login = 'translateY(-100vh) translateX(00vw)';
         const logged = 'translateY(-100vh) translateX(-100vw)';
         const forgetpassword1 = 'translateY(-100vh) translateX(100vw)';
-        const forgetpassword2 = 'translateY(-100vh) translateX(100vw)';
+        const forgetpassword2 = 'translateY(-100vh) translateX(200vw)';
         const register1 = 'translateY(00vh) translateX(00vw)';
         const register2 = 'translateY(00vh) translateX(-100vw)';
         const register3 = 'translateY(00vh) translateX(-200vw)';
@@ -59,8 +59,10 @@ function importAll(r) {
                 switch (goto) {
                     case 'logged':
                         e.preventDefault();
-                        if (testlogin())
+                        if (testlogin()){
                             main.style.transform = logged;
+                            interfacelogged.style.display = flex;
+                        }
                         else
                             console.log('Connexion failed');
                             
@@ -68,7 +70,6 @@ function importAll(r) {
 
                     case 'login':
                         e.preventDefault();
-                        interfacelogged.style.display = flex;
                         main.style.transform = login;
                         break;
                         

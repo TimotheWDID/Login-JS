@@ -9,7 +9,7 @@
 <body>
 <main>
     
-    <!-- ---------------------------------First register page--------------------------------- -->
+    <!-- ---------------------------------First register interface--------------------------------- -->
     <div class="screen register-screen">
         <div class="card" id="login">
             
@@ -21,14 +21,18 @@
                 <div class="card-content">
                     
                     <div class="card-item">
+                        <input type="text" placeholder="Pseudo" name="" id="">
+                    </div>
+                    <div class="card-item">
+                        <input type="email" placeholder="Email" name="" id="">
                     </div>
                     
                     <div  class="card-item">
-                        <div class="password-box">
-                        </div>
+                        <input name="date" id="date" type="date">
                     </div>
                     
-                    <div class="card-next">
+                    <div class="card-item">
+                        <button type="submit" class="next" data-go="register2">Suivant</button>
                     </div>
                     
                 </div> 
@@ -36,9 +40,9 @@
             
         </div>
     </div>
-    <!-- --------------------------------End first register page-------------------------------- -->
+    <!-- --------------------------------End first register interface-------------------------------- -->
     
-    <!-- --------------------------------Second register page-------------------------------- -->
+    <!-- --------------------------------Second register interface-------------------------------- -->
     <div class="screen register-password-screen">
         <div class="card" id="login">
             
@@ -50,14 +54,15 @@
                 <div class="card-content">
                     
                     <div class="card-item">
+                        <input type="password" placeholder="Mot de passe">
                     </div>
                     
                     <div  class="card-item">
-                        <div class="password-box">
-                        </div>
+                        <input type="password" placeholder="Confirmer mot de passe">
                     </div>
                     
                     <div class="card-next">
+                        <button type="submit" data-go="register3" class="next">Confirmer</button>
                     </div>
                     
                 </div> 
@@ -65,9 +70,9 @@
             
         </div>
     </div>
-    <!-- --------------------------------End second register page-------------------------------- -->
+    <!-- --------------------------------End second register interface-------------------------------- -->
     
-    <!-- --------------------------------Third register page-------------------------------- -->
+    <!-- --------------------------------Third register interface-------------------------------- -->
     <div class="screen register-confirm-screen">
         <div class="card" id="login">
             
@@ -79,24 +84,25 @@
                 <div class="card-content">
                     
                     <div class="card-item">
+                        Nous vous remercions pour votre inscription.
                     </div>
                     
                     <div  class="card-item">
-                        <div class="password-box">
-                        </div>
+                        Un mail de confirmation a été envoyé a votre adresse: 
                     </div>
+                    <div class="card-item"> <b> *****@****.** </b> .</div>
+                    <div class="card-item"> merci de consulté votre boite mail.</div>
+                    <div class="card-item"><button class="next" data-go="login" type="submit">Terminer</button></div>
                     
-                    <div class="card-next">
-                    </div>
                     
                 </div> 
             </form>
             
         </div>
     </div>
-    <!-- --------------------------------End third register page-------------------------------- -->
+    <!-- --------------------------------End third register interface-------------------------------- -->
     
-    <!-- ok--------------------------------Log-in page-------------------------------- -->
+    <!-- --------------------------------Log-in interface-------------------------------- -->
     <div class="screen login-screen">
         <div class="card" id="login">
             
@@ -113,7 +119,7 @@
                     
                     <div  class="card-item">
                         <div class="password-box">
-                            <input placeholder="Mot de passe" required name="password" class="input-password" type="password" id="datapassword">
+                            <input required placeholder="Mot de passe" required name="password" class="input-password" type="password" id="datapassword">
                         </div>
                         <a class="link link-forgetpassword" data-go="forgetpassword1" href="#">Mot de passe oublié ?</a>
                     </div>
@@ -130,9 +136,9 @@
             
         </div>
     </div>
-    <!-- --------------------------------End log-in page-------------------------------- -->
+    <!-- --------------------------------End log-in interface-------------------------------- -->
     
-    <!-- --------------------------------Logged page-------------------------------- -->
+    <!-- --------------------------------Logged interface-------------------------------- -->
     <div class="screen connected-screen" id="connected">
         <div class="card" id="login">
             
@@ -158,9 +164,9 @@
             
         </div>
     </div>
-    <!-- --------------------------------End logged page-------------------------------- -->
+    <!-- --------------------------------End logged interface-------------------------------- -->
     
-    <!-- --------------------------------Forget password page-------------------------------- -->
+    <!-- --------------------------------Forget password1 interface-------------------------------- -->
     <div class="screen forgetpassword-screen">
         <div class="card" id="login">
             
@@ -172,7 +178,7 @@
                 <div class="card-content">
                     
                     <div class="card-item">
-                        <input type="text" name="" placeholder="Email" id="">
+                        <input required type="text" name="" placeholder="Email" id="">
                     </div>
                     
                     <div class="card-next">
@@ -185,7 +191,34 @@
             
         </div>
     </div>
-    <!-- --------------------------------End forget password page-------------------------------- -->
+    <!-- --------------------------------End forget password1 interface-------------------------------- -->
+    
+    <!-- --------------------------------Forget password2 interface-------------------------------- -->
+    <div class="screen confirm-forgetpassword-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Nouveau mot de passe</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
+                        Nous vous avons envoyer votre nouveau mot de passe a votre adresse:
+                    </div>
+                    
+                    <div class="card-item"> <b> *****@****.** </b> .</div>
+                    <div class="card-item"> merci de consulté votre boite mail.</div>
+                    <div class="card-item"><button class="next" data-go="login" type="submit">Terminer</button></div>
+                    
+                    
+                </div> 
+            </form>
+            
+        </div>
+    </div>
+    <!-- --------------------------------End forget password2 interface-------------------------------- -->
     
 </main>
 
