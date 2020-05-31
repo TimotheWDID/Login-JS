@@ -25,8 +25,8 @@ function importAll(r) {
         const interfacelogged = document.querySelector('#connected');
         const login = 'translateY(-100vh) translateX(00vw)';
         const logged = 'translateY(-100vh) translateX(-100vw)';
-        const forgetpassword1 = 'translateY(-100vh) translateX(100vw)';
-        const forgetpassword2 = 'translateY(-100vh) translateX(200vw)';
+        const forgotpassword1 = 'translateY(-100vh) translateX(100vw)';
+        const forgotpassword2 = 'translateY(-100vh) translateX(200vw)';
         const register1 = 'translateY(00vh) translateX(00vw)';
         const register2 = 'translateY(00vh) translateX(-100vw)';
         const register3 = 'translateY(00vh) translateX(-200vw)';
@@ -86,13 +86,13 @@ function importAll(r) {
                         window.location.reload()
                         break;
                         
-                    case 'forgetpassword1':
-                        main.style.transform = forgetpassword1;
+                    case 'forgotpassword1':
+                        main.style.transform = forgotpassword1;
                         break;
 
-                    case 'forgetpassword2':
+                    case 'forgotpassword2':
                        
-                        main.style.transform = forgetpassword2;
+                        main.style.transform = forgotpassword2;
                         break;
 
                     case 'register1':

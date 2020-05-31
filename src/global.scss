@@ -25,9 +25,9 @@ main{
     transition-duration: 2s;
     //login
     transform: translateY(-100vh) translateX(00vw); 
-    //forgetpassword1
+    //forgotpassword1
     // transform: translateY(-100vh) translateX(100vw);
-    //forgetpassword2
+    //forgotpassword2
     // transform: translateY(-100vh) translateX(200vw);
     //register1
     //  transform: translateY(00vh) translateX(00vw);
@@ -94,10 +94,10 @@ main{
 .connected-screen{
     transform: translateY(100vh) translateX(100vw);
 }
-.forgetpassword-screen{
+.forgotpassword-screen{
     transform: translateY(100vh) translateX(-100vw);
 }
-.confirm-forgetpassword-screen{
+.confirm-forgotpassword-screen{
     transform: translateY(100vh) translateX(-200vw);
 }
 .register-screen{
@@ -114,7 +114,7 @@ main{
     text-decoration: none;
     color: $grey;
 }
-.link-forgetpassword{
+.link-forgotpassword{
     margin-top: 2%;
     margin-right: 10px;
     float: right;
