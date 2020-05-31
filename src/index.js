@@ -30,6 +30,8 @@ function importAll(r) {
         const register1 = 'translateY(00vh) translateX(00vw)';
         const register2 = 'translateY(00vh) translateX(-100vw)';
         const register3 = 'translateY(00vh) translateX(-200vw)';
+        const dataemail = document.querySelector('#dataemail');
+        const datapassword = document.querySelector('#datapassword');
     //<Pages
 
 //<Const
@@ -40,9 +42,7 @@ function importAll(r) {
 
         //>Test Login
         function testlogin() { 
-            let dataemail = document.querySelector('#dataemail').value
-            let datapassword = document.querySelector('#datapassword').value
-            if (datapassword === password && dataemail === email)
+            if (datapassword.value === password && dataemail.value === email)
                 return true;
             else
                 return false;
@@ -71,10 +71,16 @@ function importAll(r) {
                     case 'logged':
                         if (testlogin()){
                             main.style.transform = logged;
-                            interfacelogged.style.display = 'flex';                            
+                            interfacelogged.style.display = 'flex';  
+                            var wait;  
+                            wait = setTimeout(redirectToConnect, 800);               
                         }
                         else
-                            console.log('Connexion failed');
+                            document.querySelector('#error').classList.toggle('error-show');
+                            dataemail.value = '';
+                            datapassword.value = '';
+                            dataemail.parentNode.classList.toggle('error-input');
+                            datapassword.parentNode.classList.toggle('error-input');
                             
                         break;
 
@@ -122,5 +128,8 @@ function importAll(r) {
         };
 
     //<Click to change interface
-
+    function redirectToConnect(){
+      console.log('redirection vers une nouvelle page sécurisé pour la personne connecter.');
+        
+    };
 //<Functions

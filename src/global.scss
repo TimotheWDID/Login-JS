@@ -22,7 +22,7 @@ body{
     background-color: $background;
 }
 main{
-    transition-duration: 2s;
+    transition-duration: 1s;
     //login
     transform: translateY(-100vh) translateX(00vw); 
     //forgotpassword1
@@ -188,4 +188,29 @@ input{
 }
 #connected{
     display: none;
+}
+.error{
+    display: none;
+    height: 2vh;
+    float: left;
+    width: 75%;
+    font-size: 0.7rem;
+}
+.error-show{
+    display: inline;
+    color: $red;
+}
+.error-input{
+    input::-webkit-input-placeholder {
+        color: $red !important;
+        }
+        input:-moz-placeholder {
+        color: $red !important; 
+        }
+        input::-moz-placeholder {
+        color: $red !important; 
+        }
+        input:-ms-input-placeholder { 
+        color: $red !important;         
+    }
 }

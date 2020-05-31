@@ -11,7 +11,7 @@
     
     <!-- ---------------------------------First register interface--------------------------------- -->
     <div class="screen register-screen">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Inscription 1/2</h1>
@@ -21,14 +21,14 @@
                 <div class="card-content">
                     
                     <div class="card-item">
-                        <input required type="text" placeholder="Pseudo" name="" id="">
+                        <input required type="text" placeholder="Pseudo" name="Pseudo">
                     </div>
                     <div class="card-item">
-                        <input required type="email" placeholder="Email" name="" id="">
+                        <input required type="email" placeholder="Email" name="Email">
                     </div>
                     
                     <div  class="card-item">
-                        <input required name="date" id="date" type="date">
+                        <input required name="date" type="date">
                     </div>
                     
                     <div class="card-item">
@@ -45,7 +45,7 @@
     
     <!-- --------------------------------Second register interface-------------------------------- -->
     <div class="screen register-password-screen">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Inscription 2/2</h1>
@@ -76,7 +76,7 @@
     
     <!-- --------------------------------Third register interface-------------------------------- -->
     <div class="screen register-confirm-screen">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Inscription terminé</h1>
@@ -106,7 +106,7 @@
     
     <!-- --------------------------------Log-in interface-------------------------------- -->
     <div class="screen login-screen">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Bienvenue</h1>
@@ -115,11 +115,12 @@
             <form method="post" class="card-form" data-go="logged">
                 <div class="card-content">
                     
+                    <span id="error" class="error">Adresse email ou mot de passe invalide</span>
                     <div class="card-item">
                         <input required placeholder="Email" name="email" type="email" id="dataemail">
                     </div>
                     
-                    <div  class="card-item">
+                    <div class="card-item">
                         <div class="password-box">
                             <input required placeholder="Mot de passe" required name="password" class="input-password" type="password" id="datapassword">
                         </div>
@@ -142,7 +143,7 @@
     
     <!-- --------------------------------Logged interface-------------------------------- -->
     <div class="screen connected-screen" id="connected">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Vous êtes connecté !</h1>
@@ -170,7 +171,7 @@
     
     <!-- --------------------------------forgot password1 interface-------------------------------- -->
     <div class="screen forgotpassword-screen">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Mot de passe oublié</h1>
@@ -180,7 +181,7 @@
                 <div class="card-content">
                     
                     <div class="card-item">
-                        <input required type="text" name="" placeholder="Email" id="">
+                        <input required type="text" name="Email" placeholder="Email">
                     </div>
                     
                     <div class="card-next">
@@ -197,7 +198,7 @@
     
     <!-- --------------------------------forgot password2 interface-------------------------------- -->
     <div class="screen confirm-forgotpassword-screen">
-        <div class="card" id="login">
+        <div class="card">
             
             <div class="card-header">
                 <h1>Nouveau mot de passe</h1>
