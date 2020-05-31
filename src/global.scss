@@ -1,0 +1,98 @@
+//>Const
+$background: #DDDDDD;
+$font : 'Varela Round', sans-serif;
+$black: #222222;
+$grey: #626474;
+$green: #4CB050;
+//<Const
+
+//>Generic
+*{
+    outline: none;
+    font-family: $font;
+}
+body{
+    color: $black;
+    background-color: $background;
+}
+//<Generic
+//>Card
+
+.card{
+    margin: auto;
+    width: 40%;
+    height: 50vh;
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 600px;
+    text-align: center;
+    margin-top: 10vh;
+    border-radius: 20px;
+    background: #DDDDDD;
+    box-shadow:  8px 8px 15px #c2c2c2, -8px -8px 15px #f8f8f8;
+}
+.card-header{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-item{
+    height: 75%;
+    margin: 5% auto 5% auto;
+    width: 70%;
+    input{
+        width: 90%;
+        height: 30px;
+        border: none;
+        border-radius: 20px;
+        background: $background;
+        box-shadow: inset 2px 2px 4px #b7b7b7, inset -2px -2px 4px #ffffff;
+        padding: 5px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+.card-next{
+    margin-top: 20%;
+}
+//<card
+.link{
+    text-decoration: none;
+    color: $grey;
+}
+.link-forgetpassword{
+    margin-top: 2%;
+    margin-right: 10px;
+    float: right;
+    font-size: 0.7rem;
+}
+
+.register{
+    color: $grey;
+    .link{
+        color: $black;
+    }
+}
+
+.next{
+    transition: 0.5s;
+    border: solid 2px $background;
+    border-radius: 25px;
+    height: 50px;
+    width: 70%;
+    background-color: $green;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background: #4CB050;
+    box-shadow:  5px 5px 10px #b7b7b7, 
+                -5px -5px 10px #ffffff;
+}
+.next:active{
+    transition: 0.5s;
+    background: #4CB050;
+    box-shadow: inset 5px 5px 10px #3f9242, 
+                inset -5px -5px 10px #59ce5e;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Login-JS",
+  "version": "1.0.0",
+  "description": "Timothé Portelli",
+  "main": "index.js",
+  "scripts": {
+    "prod": "webpack",
+    "dev": "webpack-dev-server --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimotheWDID/Login-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimotheWDID/Login-JS/issues"
+  },
+  "homepage": "https://github.com/TimotheWDID/Login-JS#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "moment": "^2.25.3"
+  }
+}
