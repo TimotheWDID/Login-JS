@@ -96,7 +96,7 @@
     </div>
     <!-- --------------------------------End third register page-------------------------------- -->
     
-    <!-- --------------------------------Log-in page-------------------------------- -->
+    <!-- ok--------------------------------Log-in page-------------------------------- -->
     <div class="screen login-screen">
         <div class="card" id="login">
             
@@ -115,14 +115,14 @@
                         <div class="password-box">
                             <input placeholder="Mot de passe" required name="password" class="input-password" type="password" id="datapassword">
                         </div>
-                        <a class="link link-forgetpassword" id="forgetpassword" href="#">Mot de passe oublié ?</a>
+                        <a class="link link-forgetpassword" data-go="forgetpassword1" href="#">Mot de passe oublié ?</a>
                     </div>
                     
                     <div class="card-next">
-                        <button name="connexion" class="next" id="login-submit" type="submit">
+                        <button name="connexion" class="next" data-go="logged" type="submit">
                             Connexion
                         </button>
-                        <p class="register">Pas inscrit ? <a class="link" id="register" href="#">Inscription</a></p> 
+                        <p class="register">Pas inscrit ? <a class="link" data-go="register1" href="#">Inscription</a></p> 
                     </div>
                     
                 </div> 
@@ -133,25 +133,24 @@
     <!-- --------------------------------End log-in page-------------------------------- -->
     
     <!-- --------------------------------Logged page-------------------------------- -->
-    <div class="screen connected-screen">
+    <div class="screen connected-screen" id="connected">
         <div class="card" id="login">
             
             <div class="card-header">
                 <h1>Vous êtes connecté !</h1>
             </div>
             
-            <form class="card-form" id="loginForm">
+            <form class="card-form">
                 <div class="card-content">
-                    
-                    <div class="card-item">
+                    <div class="shortcuts">
+                        <a href="#"><div class="tinybutton"><img src="/img/facebook.svg" alt="" srcset=""></div></a>
+                        <a href="#"><div class="tinybutton"><img src="/img/github.svg" alt="" srcset=""></div></a>
+                        <a href="#"><div class="tinybutton"><img src="/img/gitlab.svg" alt="" srcset=""></div></a>
+                        <a href="#"><div class="tinybutton"><img src="/img/linkedin.svg" alt="" srcset=""></div></a>
+                        <a href="#"><div class="tinybutton"><img src="/img/youtube.svg" alt="" srcset=""></div></a>
                     </div>
-                    
-                    <div  class="card-item">
-                        <div class="password-box">
-                        </div>
-                    </div>
-                    
                     <div class="card-next">
+                        <button type="submit" data-go="disconnect" class="next red">Se déconnecter</button>
                     </div>
                     
                 </div> 
@@ -173,15 +172,13 @@
                 <div class="card-content">
                     
                     <div class="card-item">
-                    </div>
-                    
-                    <div  class="card-item">
-                        <div class="password-box">
-                        </div>
+                        <input type="text" name="" placeholder="Email" id="">
                     </div>
                     
                     <div class="card-next">
+                        <button type="submit" data-go="forgetpassword2" class="next">Envoyer le mail de récupération</button>
                     </div>
+                    <div class="card-item"><a class="link" data-go="login" href="#">Retour</a></div>
                     
                 </div> 
             </form>

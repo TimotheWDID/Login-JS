@@ -4,6 +4,7 @@ $font : 'Varela Round', sans-serif;
 $black: #222222;
 $grey: #626474;
 $green: #4CB050;
+$red: #df2f2f;
 //<Const
 
 //>Generic
@@ -22,7 +23,10 @@ body{
 }
 main{
     transition-duration: 2s;
-    transform: translateY(-100vh) translateX(00vw);
+    //login
+    transform: translateY(-100vh) translateX(00vw); 
+    //forgetpassword
+    // transform: translateY(-100vh) translateX(100vw);
 }
 //<Generic
 //>Card
@@ -123,13 +127,52 @@ main{
     color: white;
     font-size: 1.2rem;
     border-radius: 25px;
-    background: #4CB050;
+    background: $green;
     box-shadow:  5px 5px 10px #b7b7b7, 
                 -5px -5px 10px #ffffff;
 }
+.red{
+    background-color: $red;
+}
+.red:active{
+    box-shadow: inset 20px 20px 60px #be2828, 
+                inset -20px -20px 60px #ff3636;
+}
 .next:active{
     transition: 0.5s;
-    background: #4CB050;
+    background: $green;
     box-shadow: inset 5px 5px 10px #3f9242, 
                 inset -5px -5px 10px #59ce5e;
+}
+.shortcuts{
+    width: 70%;
+    margin: 5% auto 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.tinybutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background: #dddddd;
+    box-shadow:  5px 5px 10px #bcbcbc, 
+                 -5px -5px 10px #fefefe;
+    img{
+        path{
+            fill: $grey;
+        }
+        height: 50%;
+        width: 50%;
+    }
+}
+.tinybutton:active{
+    background: linear-gradient(145deg, #c7c7c7, #ececec);
+}
+#connected{
+    display: none;
 }
