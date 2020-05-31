@@ -8,38 +8,188 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></head>
 <body>
 <main>
-    <div class="card">
-
-        <div class="card-header">
-            <h1>Bienvenue</h1>
-        </div>
-        
-        <form class="card-form" id="loginForm">
-            <div class="card-content">
-
-                <div class="card-item">
-                    <input required placeholder="Email" name="email" type="email">
-                </div>
-
-                <div  class="card-item">
-                    <div class="password-box">
-                        <input placeholder="Mot de passe" required name="password" class="input-password" type="password">
+    
+    <!-- ---------------------------------First register page--------------------------------- -->
+    <div class="screen register-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Inscription 1/2</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
                     </div>
-                    <a class="link link-forgetpassword" href="#">Mot de passe oublié ?</a>
-                </div>
-
-                <div class="card-next">
-                    <button name="connexion" class="next" type="submit">
-                        Connexion
-                    </button>
-                    <p class="register">Pas inscrit ? <a class="link" href="#">Inscription</a></p> 
-                </div>
-
-            </div> 
-        </form>
-
+                    
+                    <div  class="card-item">
+                        <div class="password-box">
+                        </div>
+                    </div>
+                    
+                    <div class="card-next">
+                    </div>
+                    
+                </div> 
+            </form>
+            
+        </div>
     </div>
-
+    <!-- --------------------------------End first register page-------------------------------- -->
+    
+    <!-- --------------------------------Second register page-------------------------------- -->
+    <div class="screen register-password-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Inscription 2/2</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
+                    </div>
+                    
+                    <div  class="card-item">
+                        <div class="password-box">
+                        </div>
+                    </div>
+                    
+                    <div class="card-next">
+                    </div>
+                    
+                </div> 
+            </form>
+            
+        </div>
+    </div>
+    <!-- --------------------------------End second register page-------------------------------- -->
+    
+    <!-- --------------------------------Third register page-------------------------------- -->
+    <div class="screen register-confirm-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Inscription terminé</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
+                    </div>
+                    
+                    <div  class="card-item">
+                        <div class="password-box">
+                        </div>
+                    </div>
+                    
+                    <div class="card-next">
+                    </div>
+                    
+                </div> 
+            </form>
+            
+        </div>
+    </div>
+    <!-- --------------------------------End third register page-------------------------------- -->
+    
+    <!-- --------------------------------Log-in page-------------------------------- -->
+    <div class="screen login-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Bienvenue</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
+                        <input required placeholder="Email" name="email" type="email" id="dataemail">
+                    </div>
+                    
+                    <div  class="card-item">
+                        <div class="password-box">
+                            <input placeholder="Mot de passe" required name="password" class="input-password" type="password" id="datapassword">
+                        </div>
+                        <a class="link link-forgetpassword" id="forgetpassword" href="#">Mot de passe oublié ?</a>
+                    </div>
+                    
+                    <div class="card-next">
+                        <button name="connexion" class="next" id="login-submit" type="submit">
+                            Connexion
+                        </button>
+                        <p class="register">Pas inscrit ? <a class="link" id="register" href="#">Inscription</a></p> 
+                    </div>
+                    
+                </div> 
+            </form>
+            
+        </div>
+    </div>
+    <!-- --------------------------------End log-in page-------------------------------- -->
+    
+    <!-- --------------------------------Logged page-------------------------------- -->
+    <div class="screen connected-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Vous êtes connecté !</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
+                    </div>
+                    
+                    <div  class="card-item">
+                        <div class="password-box">
+                        </div>
+                    </div>
+                    
+                    <div class="card-next">
+                    </div>
+                    
+                </div> 
+            </form>
+            
+        </div>
+    </div>
+    <!-- --------------------------------End logged page-------------------------------- -->
+    
+    <!-- --------------------------------Forget password page-------------------------------- -->
+    <div class="screen forgetpassword-screen">
+        <div class="card" id="login">
+            
+            <div class="card-header">
+                <h1>Mot de passe oublié</h1>
+            </div>
+            
+            <form class="card-form" id="loginForm">
+                <div class="card-content">
+                    
+                    <div class="card-item">
+                    </div>
+                    
+                    <div  class="card-item">
+                        <div class="password-box">
+                        </div>
+                    </div>
+                    
+                    <div class="card-next">
+                    </div>
+                    
+                </div> 
+            </form>
+            
+        </div>
+    </div>
+    <!-- --------------------------------End forget password page-------------------------------- -->
+    
 </main>
 
 </body>

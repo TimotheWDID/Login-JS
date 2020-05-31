@@ -11,9 +11,18 @@ $green: #4CB050;
     outline: none;
     font-family: $font;
 }
+html{
+//    overflow: hidden;
+}
 body{
+    margin: 0;
+    padding: 0;
     color: $black;
     background-color: $background;
+}
+main{
+    transition-duration: 2s;
+    transform: translateY(-100vh) translateX(00vw);
 }
 //<Generic
 //>Card
@@ -27,7 +36,6 @@ body{
     min-height: 300px;
     max-height: 600px;
     text-align: center;
-    margin-top: 10vh;
     border-radius: 20px;
     background: #DDDDDD;
     box-shadow:  8px 8px 15px #c2c2c2, -8px -8px 15px #f8f8f8;
@@ -58,6 +66,35 @@ body{
     margin-top: 20%;
 }
 //<card
+
+//>screen
+.screen{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-screen{
+    transform: translateY(100vh);
+}
+.connected-screen{
+    transform: translateY(100vh) translateX(100vw);
+}
+.forgetpassword-screen{
+    transform: translateY(100vh) translateX(-100vw);
+}
+.register-screen{
+    transform: translateY(00vh) translateX(00vw);
+}
+.register-password-screen{
+    transform: translateY(00vh) translateX(100vw);
+}
+.register-confirm-screen{
+    transform: translateY(00vh) translateX(200vw);
+}
+//<screen
 .link{
     text-decoration: none;
     color: $grey;
