@@ -81,6 +81,10 @@ function importAll(r) {
                     case 'login':
                         main.style.transform = login;
                         break;
+
+                    case 'reload':
+                        window.location.reload()
+                        break;
                         
                     case 'forgetpassword1':
                         main.style.transform = forgetpassword1;
@@ -107,9 +111,8 @@ function importAll(r) {
                         break;
 
                     case 'disconnect':
-                       
-                        main.style.transform = login;
                         interfacelogged.style.display = 'none';
+                        window.location.reload()
 
                         break;
                     
